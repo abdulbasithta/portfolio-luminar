@@ -1,0 +1,145 @@
+:root {
+    --primary-color: #6366f1;
+    --secondary-color: #773a98;
+    --accent-color: #06b6d4;
+    --dark-bg: #0f172a;
+    --card-bg: #1e293b;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --gradient-1: linear-gradient(135deg, #54216f 0%, #8b8ce1 100%);
+    --gradient-2: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+
+
+}
+
+body {
+    height: 100vh;
+    background-color: var(--dark-bg);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+
+.dark-bg {
+    background-color: var(--dark-bg);
+}
+
+.nav-item > a {
+    color: var(--text-secondary);
+    transition: transform 0.5s ease;
+}
+
+.gradient {
+    color: var(--secondary-color);
+}
+
+.nav-item>a:hover {
+    color: var(--text-primary);
+    transform: translateY(-6px);
+}
+
+.main-head {
+    /*In  using gradient color use background*/
+    background: var(--gradient-1);
+
+    /* clip the background color into text color */
+    -webkit-background-clip: text;   
+
+    /* fill the color into text */
+    -webkit-text-fill-color: transparent;
+}
+
+.hero {
+    color: var(--text-secondary);
+}
+
+.btn-work {
+    background-color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.btn-work:hover {
+    color: var(--text-primary);
+    background-color: var(--secondary-color);
+    box-shadow: 4px 4px 10px rgba(119, 58, 152, 0.6);
+}
+
+
+.btn1-work {
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.btn1-work:hover {
+    color: var(--text-primary);
+    background-color: var(--secondary-color);
+    box-shadow: 4px 4px 10px rgba(119, 58, 152, 0.6);
+    
+}
+
+.about {
+    background-color: var(--card-bg);
+    color: var(--text-primary);
+    transition: transform 0.3s ease;
+}
+
+.about-head {
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size:40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.skill-head {
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size:40px;
+}
+
+.skill {
+    background-color: var(--card-bg);
+    color: var(--text-primary);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.skill-icon {
+    font-size: 50px;
+    padding: 15px;
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.skill-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+.skill-desc {
+    font-size: 17px;
+}
+
+.skill-bar {
+    height: 6px;
+    background-color: var(--text-secondary);
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.skill-bar span {
+    display: block;
+    height: 100%;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
